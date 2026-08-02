@@ -1,0 +1,36 @@
+name: Feature
+description: Propose a new functionality or capability.
+labels:
+  - feature
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the feature, its motivation, and the expected behavior.
+      placeholder: |
+        #### Summary
+
+        Describe what should be added.
+
+        #### Motivation
+
+        Explain why this feature is needed.
+
+        #### Expected behavior
+
+        Explain how the feature should work.
+    validations:
+      required: true
+
+  - type: textarea
+    id: todo
+    attributes:
+      label: To-do
+      description: List the tasks required to complete this issue.
+      placeholder: |
+        - [ ] First task
+        - [ ] Second task
+    validations:
+      required: true

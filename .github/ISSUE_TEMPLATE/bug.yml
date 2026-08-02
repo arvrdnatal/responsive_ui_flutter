@@ -1,0 +1,49 @@
+name: Bug
+description: Report unexpected or incorrect behavior.
+labels:
+  - bug
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the current and expected behavior.
+      placeholder: |
+        #### Current behavior
+
+        Describe what is currently happening.
+
+        #### Expected behavior
+
+        Describe what should happen instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Explain how to reproduce the problem.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Select every platform where the problem occurs.
+      multiple: true
+      options:
+        - Android
+        - iOS
+        - Web
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
